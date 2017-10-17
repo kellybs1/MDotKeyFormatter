@@ -17,6 +17,7 @@ namespace KeyFormatterForMdot
             InitializeComponent();
         }
 
+        //runs conversion
         private void button1_Click(object sender, EventArgs e)
         {
             //pull value
@@ -27,6 +28,13 @@ namespace KeyFormatterForMdot
 
             //set output
             textBoxMDotKey.Text = resultKey;
+        }
+
+        //pastes from clipboard to textbox if possible
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.ContainsText())
+                textBoxServerKey.Text = Clipboard.GetText();
         }
     }
 }
