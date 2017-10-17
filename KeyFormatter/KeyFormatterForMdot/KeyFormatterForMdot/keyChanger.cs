@@ -4,6 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Class: KeyChanger
+ * Author: Brendan Kelly
+ * Date: 17/10/2017
+ * Description: Static class to manage converting the format of LoRa keys and node dev addresses
+ */
+
 namespace KeyFormatterForMdot
 {
     public static class KeyChanger

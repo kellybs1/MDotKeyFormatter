@@ -2,6 +2,15 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using KeyFormatterForMdot;
 
+
+/*
+ * Class: KeyFormatTests
+ * Author: Brendan Kelly
+ * Date: 17/10/2017
+ * Description: Unit test class for the KeyFormatter project
+ */
+
+
 namespace KeyFormatterTests
 {
     [TestClass]
