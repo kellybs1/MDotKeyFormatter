@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxServerKey
@@ -51,7 +52,7 @@
             this.textBoxMDotKey.Location = new System.Drawing.Point(8, 143);
             this.textBoxMDotKey.Name = "textBoxMDotKey";
             this.textBoxMDotKey.ReadOnly = true;
-            this.textBoxMDotKey.Size = new System.Drawing.Size(676, 26);
+            this.textBoxMDotKey.Size = new System.Drawing.Size(521, 26);
             this.textBoxMDotKey.TabIndex = 1;
             // 
             // label1
@@ -96,11 +97,23 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // buttonCopy
+            // 
+            this.buttonCopy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCopy.Location = new System.Drawing.Point(535, 141);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(153, 30);
+            this.buttonCopy.TabIndex = 6;
+            this.buttonCopy.Text = "Copy";
+            this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 182);
+            this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -125,6 +138,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonCopy;
     }
 }
 

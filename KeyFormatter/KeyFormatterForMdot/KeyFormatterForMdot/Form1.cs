@@ -36,5 +36,12 @@ namespace KeyFormatterForMdot
             if (Clipboard.ContainsText())
                 textBoxServerKey.Text = Clipboard.GetText();
         }
+
+        //copies converted key to clipboard if there is a key there
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            if (textBoxMDotKey.Text != "")
+                Clipboard.SetText(textBoxMDotKey.Text);
+        }
     }
 }
